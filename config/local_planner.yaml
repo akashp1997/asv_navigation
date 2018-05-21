@@ -1,0 +1,18 @@
+base_local_planner: teb_local_planner/TebLocalPlannerROS
+acc_lim_x: 0.5
+acc_lim_theta: 0.5
+max_vel_x: 0.4
+max_vel_x_backwards: 0.32
+max_vel_theta: 0.3
+min_turning_radius: 0
+TebLocalPlannerROS:
+
+  ## Costmap converter plugin   
+  costmap_converter_plugin: "costmap_converter::CostmapToPolygonsDBSMCCH"
+  #costmap_converter_plugin: "costmap_converter::CostmapToLinesDBSRANSAC"
+  #costmap_converter_plugin: "costmap_converter::CostmapToLinesDBSMCCH"
+  #costmap_converter_plugin: "costmap_converter::CostmapToPolygonsDBSConcaveHull"
+  #costmap_converter_plugin: "" # deactivate plugin
+  costmap_converter_spin_thread: True
+  costmap_converter_rate: 5
+ 

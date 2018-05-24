@@ -1,4 +1,5 @@
-base_local_planner: teb_local_planner/TebLocalPlannerROS
+#base_local_planner: teb_local_planner/TebLocalPlannerROS
+#controller_frequency: 10
 acc_lim_x: 0.5
 acc_lim_theta: 0.5
 max_vel_x: 0.4
@@ -15,4 +16,3 @@ TebLocalPlannerROS:
   #costmap_converter_plugin: "" # deactivate plugin
   costmap_converter_spin_thread: True
   costmap_converter_rate: 5
- 

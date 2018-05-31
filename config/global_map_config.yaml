@@ -3,8 +3,8 @@ plugins:
   - {name: static, type: "costmap_2d::StaticLayer"}
   - {name: inflation, type: "costmap_2d::InflationLayer"}
   - {name: obstacle, type: "costmap_2d::ObstacleLayer"}
-global_frame: /map
-robot_base_frame: /base_link
+global_frame: map
+robot_base_frame: base_link
 transform_tolerance: 0.2
 
 #Rate Parameters
@@ -38,7 +38,7 @@ obstacle:
   #Sensor Management Parameters
   observation_sources: ""
   topic: /scan
-  sensor_frame: "/base_link"
+  sensor_frame: base_link
   observation_persistence: 0
   expected_update_rate: 0
   data_type: "LaserScan"
